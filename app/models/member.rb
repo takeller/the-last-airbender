@@ -4,8 +4,8 @@ class Member
   def initialize(member_data)
     @name = member_data[:name]
     @photo = member_data[:photoUrl]
-    @allies = member_data[:allies]
-    @enemies = member_data[:enemies]
+    @allies = member_data[:allies].join(', ')
+    @enemies = member_data[:enemies].join(', ')
     @affiliation = member_data[:affiliation]
   end
 end
