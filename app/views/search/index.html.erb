@@ -3,6 +3,7 @@
 <section id='results'>
   <h3>Total Members: <%= @members.count %></h3>
   <% @members.each do |member| %>
+    <%= image_tag member.photo unless member.photo.nil? %>
     <ul class='member'>
       <li class='name'>Name: <%= member.name %></li>
       <li class='allies'>Allies: <%= member.allies %> </li>

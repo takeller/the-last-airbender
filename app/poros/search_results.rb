@@ -16,6 +16,8 @@ class SearchResults
   private
 
   def format_nation_input(nation)
-    nation.sub(/_/, '+')
+    return nation.sub(/_/, '+') unless nation == 'water_tribes'
+
+    nation.sub(/_/, '+').delete('s')
   end
 end
