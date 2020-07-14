@@ -1,6 +1,7 @@
 <h1>Search Results</h1>
 
 <section id='results'>
+  <h3>Total Members: <%= @members.count %></h3>
   <% @members.each do |member| %>
     <ul class='member'>
       <li class='name'><%= member.name %></li>

@@ -9,6 +9,7 @@ describe 'As a visitor' do
       click_on 'Search For Members'
 
       expect(current_path). to eq('/search')
+      expect(page).to have_content('Total Members: 20')
       expect(page).to have_css('.member', count: 20)
     end
 
