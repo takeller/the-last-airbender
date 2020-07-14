@@ -1,0 +1,12 @@
+<h1>Search Results</h1>
+
+<section id='results'>
+  <% @members.each do |member| %>
+    <ul class='member'>
+      <li class='name'><%= member.name %></li>
+      <li class='allies'>Allies: <%= member.allies %> </li>
+      <li class='enemies'>Enemies: <%= member.enemies %> </li>
+      <li class='affiliations'>Affiliations: <%= member.affiliation %> </li>
+    </ul>
+  <% end %>
+</section>
