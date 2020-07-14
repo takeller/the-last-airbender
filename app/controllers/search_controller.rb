@@ -4,5 +4,4 @@ class SearchController < ApplicationController
     search_results = SearchResults.new
     @members = search_results.members(params[:nation])
   end
-
 end
