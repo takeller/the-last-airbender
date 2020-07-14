@@ -22,6 +22,7 @@ describe 'As a visitor' do
       expect(current_path). to eq('/search')
 
       within(first('.member')) do
+        expect(page).to have_css('.photo')
         expect(page).to have_css('.name')
         expect(page).to have_css('.allies')
         expect(page).to have_css('.enemies')
