@@ -4,7 +4,7 @@
   <h3>Total Members: <%= @members.count %></h3>
   <% @members.each do |member| %>
     <ul class='member'>
-      <li class='name'><%= member.name %></li>
+      <li class='name'>Name: <%= member.name %></li>
       <li class='allies'>Allies: <%= member.allies %> </li>
       <li class='enemies'>Enemies: <%= member.enemies %> </li>
       <li class='affiliations'>Affiliations: <%= member.affiliation %> </li>
